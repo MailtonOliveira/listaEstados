@@ -1,4 +1,4 @@
-const estadoModel = require("../model/estados");
+const estadoModel = require("../src/routes/model/estados");
 
 const controller = {
     listEstados(request, response) {
