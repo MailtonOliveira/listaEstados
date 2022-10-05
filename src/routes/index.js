@@ -4,4 +4,4 @@ const routes = express.Router();
 
 routes.get("/", estadoController.listEstados);
 
-module.exports = routes
+module.exports = routes;

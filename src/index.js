@@ -7,4 +7,4 @@ const server = express();
 
 server.use(routes);
 
-server.listen(8000);
+server.listen(8000, () => console.log("Server ON"));
