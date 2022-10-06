@@ -1,6 +1,6 @@
 const estadoModel = require("../model/estados");
 
-const controller = {
+const estadosController = {
     listEstados(request, response) {
         response.setHeader("Access-Control-Allow-Origin", "*");
 
@@ -8,6 +8,20 @@ const controller = {
 
     response.json(estadosDatabase);
     },
-};
 
-module.exports = controller;
+    listProdutos: (req, res) => {
+        res.setHeader("Access-Control-Allow-Origin", "*");
+
+        res.json([{nome: "produto 1"}, {nome: "Produto 2"}]);
+
+    },
+
+    cadastrarProduto: (req, res) => {
+        console.log(req.body)
+        res.json("Produto Cadastrado")
+    }
+};
+ 
+
+
+module.exports =  estadosController;
